@@ -3,20 +3,14 @@ package com.project.medicalsystem.model;
 public class Prescription extends BaseEntity {
 
     private String patientId;
-
     private String patientName;
-
     private String doctorId;
-
     private String specialty;
-
     private String medicine;
-
     private String dosage;
-
     private String usage;
-
     private String notes;
+
     public Prescription(String id,
                         String patientId,
                         String patientName,
@@ -26,7 +20,7 @@ public class Prescription extends BaseEntity {
                         String dosage,
                         String usage,
                         String notes) {
-        super(id);   
+        super(id);
         this.patientId   = patientId;
         this.patientName = patientName;
         this.doctorId    = doctorId;
@@ -37,29 +31,54 @@ public class Prescription extends BaseEntity {
         this.notes       = notes;
     }
 
-    public String getPatientId()   { return patientId; }
+    public String getPatientId(){
+        return patientId;
+    }
 
-    public String getPatientName() { return patientName; }
+    public String getPatientName() {
+        return patientName;
+    }
 
-    public String getDoctorId()    { return doctorId; }
+    public String getDoctorId(){
+        return doctorId;
+    }
 
-    public String getSpecialty()   { return specialty; }
+    public String getSpecialty(){
+        return specialty;
+    }
 
-    public String getMedicine()    { return medicine; }
+    public String getMedicine(){
+        return medicine;
+    }
 
-    public String getDosage()      { return dosage; }
+    public String getDosage(){
+        return dosage;
+    }
 
-    public String getUsage()       { return usage; }
+    public String getUsage(){
+        return usage;
+    }
 
-    public String getNotes()       { return notes; }
+    public String getNotes(){
+        return notes;
+    }
 
-    public void setMedicine(String medicine) { this.medicine = medicine; }
+    public void setMedicine(String medicine){
+        this.medicine = medicine;
+    }
 
-    public void setDosage(String dosage)     { this.dosage = dosage; }
+    public void setDosage(String dosage) {
+        this.dosage = dosage;
+    }
 
-    public void setUsage(String usage)       { this.usage = usage; }
+    public void setUsage(String usage){
+        this.usage = usage;
+    }
 
-    public void setNotes(String notes)       { this.notes = notes; }
+    public void setNotes(String notes){
+        this.notes = notes;
+    }
+
     @Override
     public String toFileString() {
         return id + "," + patientId + "," + patientName + "," +
